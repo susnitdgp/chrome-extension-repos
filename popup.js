@@ -1,4 +1,4 @@
-console.log("This is a popup!");
+console.log("This is a popup!")
 
 function myAlert(){
     alert('Button Clicked');
