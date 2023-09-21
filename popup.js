@@ -1,5 +1,6 @@
 function myAlert(){
     alert('Button Clicked');
+    chrome.runtime.sendMessage({greeting: "hello"});
 }
 
 function basicNotification(){
@@ -20,6 +21,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const sbmt = document.getElementById('sbmt');
     sbmt.addEventListener('click', myAlert);
 
+    
     const basic = document.getElementById('basic');
     const progressNotif = document.getElementById('progress');
     const list = document.getElementById('list');
