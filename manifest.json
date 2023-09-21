@@ -4,6 +4,12 @@
   "description": "Extensive Feature Testing Extension",
   "version": "1.0",
 
+  "permissions": ["storage"],
+
+  "background": {
+    "service_worker": "background.js"
+  },
+
   "action": {
     "default_title":"Sample Popup",
     "default_popup": "popup.html",
