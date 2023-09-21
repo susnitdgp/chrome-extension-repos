@@ -1,11 +1,11 @@
 {
   "manifest_version": 3,
-  "name": "Hello Extensions",
-  "description": "Base Level Extension",
+  "name": "Goswami Extensions",
+  "description": "Extensive Feature Testing Extension",
   "version": "1.0",
 
   "action": {
-    "default_title":"my popup",
+    "default_title":"Sample Popup",
     "default_popup": "popup.html",
     "default_icon": "images/hello_extensions.png"
   }
