@@ -4,7 +4,7 @@
   "description": "Extensive Feature Testing Extension",
   "version": "1.0",
 
-  "permissions": ["storage","scripting"],
+  "permissions": ["storage","scripting","notifications"],
 
   "background": {
     "service_worker": "background.js"
