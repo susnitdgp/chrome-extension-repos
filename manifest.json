@@ -10,11 +10,11 @@
     "service_worker": "background.js"
   },
 
-  
+
   "content_scripts": [
     {
       "matches": ["https://www.google.co.in/*"],
-      "css": ["theme.css"],
+      
       "js": ["./scripts/content-script.js"]
     }
   ],
