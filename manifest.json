@@ -10,8 +10,18 @@
     "service_worker": "background.js"
   },
 
+  
+  "content_scripts": [
+    {
+      "matches": ["https://www.google.co.in/*"],
+      "css": ["theme.css"],
+      "js": ["./scripts/content-script.js"]
+    }
+  ],
+
+
   "action": {
-    "default_title":"Sample Popup",
+    "default_title":"Goswami Extension for Video call",
     "default_popup": "popup.html",
     "default_icon": {
       "16": "images/get_started16.png",
