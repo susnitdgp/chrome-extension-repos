@@ -1,10 +1,11 @@
 /* CONTAINERS */
 
 body {
-    width: 30rem;
+    width: 20rem;
     color: #222;
     font: 13px/18px arial, sans-serif;
     margin: 0;
+    height: 30rem;
   }
   
   .sidebar {
