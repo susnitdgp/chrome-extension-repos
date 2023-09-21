@@ -16,5 +16,11 @@ chrome.runtime.onMessage.addListener(
     console.log(sender.tab ?
                 "from a content script:" + sender.tab.url :
                 "from the extension");
-    console.log(request.greeting);
+    console.log("Message: " + request.greeting);
+
+    //API call example
+    fetch('https://jsonplaceholder.typicode.com/posts/1')
+    .then((response) => response.json())
+    .then((json) => console.log(json));
+
 });
