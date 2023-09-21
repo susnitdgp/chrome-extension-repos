@@ -7,12 +7,33 @@
   <link rel="stylesheet" href="./popup.css" />
 </head>
   <body>
-    <span class="current">Current navigation selection</span>
+    
 
       <fieldset>
-        <legend>Hello Extensions Form</legend>
+        <legend><span class="current">Current navigation selection</span></legend>
         <input type="text" id="result" />
-        <button class="share" id='sbmt'>Submit</button>
+
+        <div class="form-group">
+          <label for="result">First Name</label>
+          <input type="text" id="result" />
+        </div>
+
+        <div class="form-group">
+          <label for="sampleTextArea">Label</label>
+          <textarea id="sampleTextArea" rows="3"></textarea>
+        </div>
+
+        <div>
+          <input type="checkbox" id="checkbox1" checked>
+          <label for="checkbox1">Checked</label>
+        </div>
+
+        <div class="block">
+          <button class="blue">Translate</button>
+          <button class="share" id='sbmt'>Submit</button>
+        </div>
+
+        
 
       </fieldset>
    
