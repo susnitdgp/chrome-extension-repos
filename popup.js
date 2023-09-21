@@ -2,8 +2,19 @@ function myAlert(){
     alert('Button Clicked');
 }
 
+function basicNotification(){
+    console.log("Goswami Extensions: "+" basicNotification clicked ");
+    let options = {
+        type: 'basic',
+        title: 'Basic Notification',
+        message: 'This is a Basic Notification',
+        iconUrl: 'images/get_started16.png'
+      };
+      chrome.notifications.create(options);
+}
+
 document.addEventListener('DOMContentLoaded', function () {
-    console.log("This is a popup!");
+    console.log("Goswami Extensions: "+" DOMContentLoaded ");
 
     //submit button click event listener
     const sbmt = document.getElementById('sbmt');
@@ -13,15 +24,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const progressNotif = document.getElementById('progress');
     const list = document.getElementById('list');
 
-    basic.addEventListener('click', () => {
-        let options = {
-          type: 'basic',
-          title: 'Basic Notification',
-          message: 'This is a Basic Notification',
-          iconUrl: 'images/get_started16.png'
-        };
-        chrome.notifications.create(options);
-      });
+    basic.addEventListener('click',basicNotification);
 
 
 });
