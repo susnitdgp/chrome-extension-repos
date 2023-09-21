@@ -3,6 +3,11 @@ function myAlert(){
     chrome.runtime.sendMessage({greeting: "hello"});
 }
 
+async function myCapture(){
+    const stream = await navigator.mediaDevices.getDisplayMedia({ audio: true, video: true });
+
+}
+
 function basicNotification(){
     console.log("Goswami Extensions: "+" basicNotification clicked ");
     let options = {
@@ -20,6 +25,11 @@ document.addEventListener('DOMContentLoaded', function () {
     //submit button click event listener
     const sbmt = document.getElementById('sbmt');
     sbmt.addEventListener('click', myAlert);
+
+
+     //capture button click event listener
+     const capture = document.getElementById('screen_capture');
+     capture.addEventListener('click', myCapture);
 
 
     const basic = document.getElementById('basic');
